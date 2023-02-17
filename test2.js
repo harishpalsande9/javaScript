@@ -123,3 +123,12 @@
 
 // let obj2 = new Object();
 //39. What are generator functions?
+
+// 43. What is Object Destructuring?
+
+let Obj = {
+  name: "Name",
+  age: 52,
+};
+
+const age = Obj.age;
