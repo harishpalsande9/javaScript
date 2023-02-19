@@ -85,3 +85,16 @@
 
 // let first = arr[0];
 // console.log(first);
+
+//call back
+
+// const fun1 = () => {
+//   console.log("first function");
+// };
+
+// const fun2 = (name, callBack) => {
+//   console.log("second function", name);
+//   callBack();
+// };
+
+// fun2("haris", fun1);
