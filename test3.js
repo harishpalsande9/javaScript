@@ -98,3 +98,35 @@
 // };
 
 // fun2("haris", fun1);
+
+// // 1
+// const obj1 = {
+//   name: "harish",
+//   age: 25,
+// };
+
+// // 2
+// let obj2 = new Object();
+// obj2.name = "harish";
+// obj2.age = 25;
+
+// // 3
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// let obj3 = new Person("harish", 25);
+
+//Rest Operation
+
+const functionName = (...value) => {
+  let sum = 0;
+  for (let i = 0; i < value.length; i++) {
+    sum += value[i];
+  }
+  return sum;
+};
+
+console.log(functionName(14, 24, 35, 24));
