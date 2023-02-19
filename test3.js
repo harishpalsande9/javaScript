@@ -121,12 +121,24 @@
 
 //Rest Operation
 
-const functionName = (...value) => {
-  let sum = 0;
-  for (let i = 0; i < value.length; i++) {
-    sum += value[i];
+// const functionName = (...value) => {
+//   let sum = 0;
+//   for (let i = 0; i < value.length; i++) {
+//     sum += value[i];
+//   }
+//   return sum;
+// };
+
+// console.log(functionName(14, 24, 35, 24));
+
+//recursion
+
+const add = (number) => {
+  if (number <= 0) {
+    return 0;
+  } else {
+    return number + add(number - 1);
   }
-  return sum;
 };
 
-console.log(functionName(14, 24, 35, 24));
+console.log(add(10));
