@@ -32,26 +32,56 @@
 
 //Event Loop
 
-console.log("Start");
+// console.log("Start");
 
-setTimeout(() => {
-  console.log("midlle");
-}, 5000);
+// setTimeout(() => {
+//   console.log("midlle");
+// }, 5000);
 
-let first = new Promise((resolve, reject) => {
-  let a = 10;
+// let first = new Promise((resolve, reject) => {
+//   let a = 10;
 
-  if (a === 10) {
-    resolve("Scucess");
-  } else {
-    reject("Failed");
-  }
-});
+//   if (a === 10) {
+//     resolve("Scucess");
+//   } else {
+//     reject("Failed");
+//   }
+// });
 
-first.then((ele) => console.log(ele)).catch((err) => console.log(err));
+// first.then((ele) => console.log(ele)).catch((err) => console.log(err));
 
-Promise.all([first, second])
-  .then((result) => console.log(result))
-  .catch((err) => console.log(err));
+// Promise.all([first, second])
+//   .then((result) => console.log(result))
+//   .catch((err) => console.log(err));
 
-console.log("End");
+// console.log("End");
+
+// x = 23; // Gives reference error
+
+// let x;
+
+// function anotherRandomFunc() {
+//   message = "Hello"; // Throws a reference error
+
+//   let message;
+// }
+// anotherRandomFunc();
+
+// Destructuring
+
+// 1) Object Destructuring
+// 2) Array Destructuring
+
+// let obj = {
+//   name: "harish",
+//   age: 25,
+// };
+
+// const { name } = obj;
+
+// // console.log(name);
+
+// let arr = [123, 325, 24, 123, 325, 24, 123];
+
+// let first = arr[0];
+// console.log(first);
